@@ -1,0 +1,56 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObjectAcl",
+        "s3:PutObject",
+        "s3:ListBucketVersions",
+        "s3:ListBucket",
+        "s3:ListAllMyBuckets",
+        "s3:GetObjectVersion",
+        "s3:GetObjectAcl",
+        "s3:GetObject",
+        "s3:GetLifecycleConfiguration",
+        "s3:GetBucketVersioning",
+        "s3:GetBucketTagging",
+        "s3:GetBucketLogging",
+        "s3:GetBucketLocation",
+        "s3:GetBucketCORS",
+        "s3:GetAccelerateConfiguration"
+      ],
+      "Resource": [
+        "arn:aws-us-gov:s3:::701341283067-gss-green-asm-secrets/*",
+        "arn:aws-us-gov:s3:::701341283067-gss-green-asm-secrets"
+      ]
+    },
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:ListTagsForResource",
+        "ecr:ListImages",
+        "ecr:GetRepositoryPolicy",
+        "ecr:GetLifecyclePolicyPreview",
+        "ecr:GetLifecyclePolicy",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:DescribeRepositories",
+        "ecr:DescribeImages",
+        "ecr:DescribeImageScanFindings",
+        "ecr:BatchGetImage",
+        "ecr:BatchCheckLayerAvailability"
+      ],
+      "Resource": [
+        "arn:aws-us-gov:ecr:us-gov-west-1:701341283067:repository/asm-unified-case-service",
+        "arn:aws-us-gov:ecr:us-gov-west-1:701341283067:repository/asm-notification-service"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/Project": "asm"
+        }
+      }
+    }
+  ]
+}
