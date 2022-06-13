@@ -115,8 +115,14 @@ let assumeRole accountId =
             assumeRoleRequest
             |> stsClient.AssumeRoleAsync
             |> Async.AwaitTask
-
-        return assumeRoleResponse.Credentials
+            |> Async.Catch
+        match assumeRoleResponse with
+        | Choice1Of2 assumeRole ->
+            return Some assumeRole.Credentials
+        | Choice2Of2 err ->
+            printfn $"Error in assuming role: %A{err.Message}"
+            return None
+                
     }
 
 type AccountInformation = { AccountName: string }
@@ -124,7 +130,7 @@ type AccountInformation = { AccountName: string }
 let private getResultForImpl (account: Account) (fn: string -> Credentials -> Async<'T>) accountId =
     async {
         let! credentials = assumeRole (accountId)
-        let! result = fn (account.ToString()) credentials
+        let! result = fn (account.ToString()) credentials.Value
         return result
     }
 
