@@ -1,0 +1,1052 @@
+﻿[
+  {
+    AccountName: SharedServices,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: SharedServices,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: SharedServices,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: SharedServices,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: SharedServices,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: SharedServices,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: CaresProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ClaimsSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 10 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 10 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ClaimsProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: DAPProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EAPProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EDASandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EDADevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 0 * * ? *)
+  },
+  {
+    AccountName: EDAProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: InnovationDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 4 * * ? *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 4 * * ? *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 4 * * ? *)
+  },
+  {
+    AccountName: ONAPDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ONAPProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: OPFundProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 1 * * ? *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: ServicingProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TorchSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 3 * * ? *)
+  },
+  {
+    AccountName: TorchProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 11 ? * MON-FRI *)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSSandbox,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSDevelopment,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 12 ? 1 2L /5)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: ec2-auto-start-schedule,
+    ScheduleExpression: cron(0 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: ec2-auto-stop-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: ecs-start-scheduler,
+    ScheduleExpression: cron(5 12 ? * MON-FRI *)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: ecs-stop-scheduler,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: gss-green-down-schedule,
+    ScheduleExpression: cron(0 21 * * ? *)
+  },
+  {
+    AccountName: TRACSProduction,
+    RuleName: gss-green-up-schedule,
+    ScheduleExpression: cron(0 6 ? 1 2L /5)
+  }
+]

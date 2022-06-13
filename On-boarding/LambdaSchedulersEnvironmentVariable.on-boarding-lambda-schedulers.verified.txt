@@ -1,0 +1,2961 @@
+﻿[
+  {
+    AccountName: SharedServices,
+    Schedules:
+{
+  "gss-green": {
+    "start": false,
+    "stop": false
+  },
+  "gss-nprod": {
+    "start": false,
+    "stop": false
+  },
+  "gss-prod": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-gss-ecs-stop-scheduler
+  },
+  {
+    AccountName: SharedServices,
+    Schedules:
+{
+  "gss-green": {
+    "start": false,
+    "stop": false
+  },
+  "gss-nprod": {
+    "start": false,
+    "stop": false
+  },
+  "gss-prod": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: SharedServices,
+    Schedules:
+{
+  "gss-green": {
+    "start": false,
+    "stop": false
+  },
+  "gss-nprod": {
+    "start": false,
+    "stop": false
+  },
+  "gss-prod": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-gss-ecs-start-scheduler
+  },
+  {
+    AccountName: SharedServices,
+    Schedules:
+{
+  "gss-green": {
+    "start": false,
+    "stop": false
+  },
+  "gss-nprod": {
+    "start": false,
+    "stop": false
+  },
+  "gss-prod": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: SharedServices,
+    Schedules:
+{
+  "gss-green": {
+    "start": false,
+    "stop": false
+  },
+  "gss-nprod": {
+    "start": false,
+    "stop": false
+  },
+  "gss-prod": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: CaresSandbox,
+    Schedules:
+{
+  "cares-sandbox": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-stop-scheduler
+  },
+  {
+    AccountName: CaresSandbox,
+    Schedules:
+{
+  "cares-sandbox": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: CaresSandbox,
+    Schedules:
+{
+  "cares-sandbox": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-start-scheduler
+  },
+  {
+    AccountName: CaresSandbox,
+    Schedules:
+{
+  "cares-sandbox": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: CaresSandbox,
+    Schedules:
+{
+  "cares-sandbox": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: CaresDevelopment,
+    Schedules:
+{
+  "cares-dev": {
+    "start": false,
+    "stop": true
+  },
+  "cares-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: CaresDevelopment,
+    Schedules:
+{
+  "cares-dev": {
+    "start": false,
+    "stop": true
+  },
+  "cares-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-stop-scheduler
+  },
+  {
+    AccountName: CaresDevelopment,
+    Schedules:
+{
+  "cares-dev": {
+    "start": false,
+    "stop": true
+  },
+  "cares-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: CaresDevelopment,
+    Schedules:
+{
+  "cares-dev": {
+    "start": false,
+    "stop": true
+  },
+  "cares-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: CaresDevelopment,
+    Schedules:
+{
+  "cares-dev": {
+    "start": false,
+    "stop": true
+  },
+  "cares-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-start-scheduler
+  },
+  {
+    AccountName: CaresProduction,
+    Schedules:
+{
+  "cares-prod": {
+    "start": false,
+    "stop": false
+  },
+  "cares-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: CaresProduction,
+    Schedules:
+{
+  "cares-prod": {
+    "start": false,
+    "stop": false
+  },
+  "cares-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: CaresProduction,
+    Schedules:
+{
+  "cares-prod": {
+    "start": false,
+    "stop": false
+  },
+  "cares-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: CaresProduction,
+    Schedules:
+{
+  "cares-prod": {
+    "start": false,
+    "stop": false
+  },
+  "cares-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-stop-scheduler
+  },
+  {
+    AccountName: CaresProduction,
+    Schedules:
+{
+  "cares-prod": {
+    "start": false,
+    "stop": false
+  },
+  "cares-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-CARES-ecs-start-scheduler
+  },
+  {
+    AccountName: ClaimsSandbox,
+    Schedules:
+{
+  "claims-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ClaimsSandbox,
+    Schedules:
+{
+  "claims-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ClaimsSandbox,
+    Schedules:
+{
+  "claims-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ClaimsSandbox,
+    Schedules:
+{
+  "claims-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-stop-scheduler
+  },
+  {
+    AccountName: ClaimsSandbox,
+    Schedules:
+{
+  "claims-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-start-scheduler
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    Schedules:
+{
+  "claims-dev": {
+    "start": true,
+    "stop": true
+  },
+  "claims-int": {
+    "start": true,
+    "stop": true
+  },
+  "claims-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-stop-scheduler
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    Schedules:
+{
+  "claims-dev": {
+    "start": true,
+    "stop": true
+  },
+  "claims-int": {
+    "start": true,
+    "stop": true
+  },
+  "claims-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    Schedules:
+{
+  "claims-dev": {
+    "start": true,
+    "stop": true
+  },
+  "claims-int": {
+    "start": true,
+    "stop": true
+  },
+  "claims-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    Schedules:
+{
+  "claims-dev": {
+    "start": true,
+    "stop": true
+  },
+  "claims-int": {
+    "start": true,
+    "stop": true
+  },
+  "claims-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ClaimsDevelopment,
+    Schedules:
+{
+  "claims-dev": {
+    "start": true,
+    "stop": true
+  },
+  "claims-int": {
+    "start": true,
+    "stop": true
+  },
+  "claims-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-start-scheduler
+  },
+  {
+    AccountName: ClaimsProduction,
+    Schedules:
+{
+  "claims-partner": {
+    "start": true,
+    "stop": true
+  },
+  "claims-prod": {
+    "start": false,
+    "stop": false
+  },
+  "claims-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ClaimsProduction,
+    Schedules:
+{
+  "claims-partner": {
+    "start": true,
+    "stop": true
+  },
+  "claims-prod": {
+    "start": false,
+    "stop": false
+  },
+  "claims-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-stop-scheduler
+  },
+  {
+    AccountName: ClaimsProduction,
+    Schedules:
+{
+  "claims-partner": {
+    "start": true,
+    "stop": true
+  },
+  "claims-prod": {
+    "start": false,
+    "stop": false
+  },
+  "claims-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ClaimsProduction,
+    Schedules:
+{
+  "claims-partner": {
+    "start": true,
+    "stop": true
+  },
+  "claims-prod": {
+    "start": false,
+    "stop": false
+  },
+  "claims-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ClaimsProduction,
+    Schedules:
+{
+  "claims-partner": {
+    "start": true,
+    "stop": true
+  },
+  "claims-prod": {
+    "start": false,
+    "stop": false
+  },
+  "claims-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Claims-ecs-start-scheduler
+  },
+  {
+    AccountName: DAPSandbox,
+    Schedules:
+{
+  "mfe-sandbox": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-start-scheduler
+  },
+  {
+    AccountName: DAPSandbox,
+    Schedules:
+{
+  "mfe-sandbox": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: DAPSandbox,
+    Schedules:
+{
+  "mfe-sandbox": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: DAPSandbox,
+    Schedules:
+{
+  "mfe-sandbox": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: DAPSandbox,
+    Schedules:
+{
+  "mfe-sandbox": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: DAPDevelopment,
+    Schedules:
+{
+  "mfe-dev": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-int": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-test": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: DAPDevelopment,
+    Schedules:
+{
+  "mfe-dev": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-int": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-test": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: DAPDevelopment,
+    Schedules:
+{
+  "mfe-dev": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-int": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-test": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: DAPDevelopment,
+    Schedules:
+{
+  "mfe-dev": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-int": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-test": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: DAPDevelopment,
+    Schedules:
+{
+  "mfe-dev": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-int": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-test": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-start-scheduler
+  },
+  {
+    AccountName: DAPProduction,
+    Schedules:
+{
+  "mfe-partner": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-stage": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: DAPProduction,
+    Schedules:
+{
+  "mfe-partner": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-stage": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-DAP-ecs-start-scheduler
+  },
+  {
+    AccountName: DAPProduction,
+    Schedules:
+{
+  "mfe-partner": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-stage": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: DAPProduction,
+    Schedules:
+{
+  "mfe-partner": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-stage": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: DAPProduction,
+    Schedules:
+{
+  "mfe-partner": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mfe-stage": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EAPSandbox,
+    Schedules:
+{
+  "fps-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EAPSandbox,
+    Schedules:
+{
+  "fps-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EAPSandbox,
+    Schedules:
+{
+  "fps-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-start-scheduler
+  },
+  {
+    AccountName: EAPSandbox,
+    Schedules:
+{
+  "fps-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EAPSandbox,
+    Schedules:
+{
+  "fps-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: EAPDevelopment,
+    Schedules:
+{
+  "fps-dev": {
+    "start": true,
+    "stop": true
+  },
+  "fps-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EAPDevelopment,
+    Schedules:
+{
+  "fps-dev": {
+    "start": true,
+    "stop": true
+  },
+  "fps-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EAPDevelopment,
+    Schedules:
+{
+  "fps-dev": {
+    "start": true,
+    "stop": true
+  },
+  "fps-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-start-scheduler
+  },
+  {
+    AccountName: EAPDevelopment,
+    Schedules:
+{
+  "fps-dev": {
+    "start": true,
+    "stop": true
+  },
+  "fps-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: EAPDevelopment,
+    Schedules:
+{
+  "fps-dev": {
+    "start": true,
+    "stop": true
+  },
+  "fps-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EAPProduction,
+    Schedules:
+{
+  "fps-prod": {
+    "start": false,
+    "stop": false
+  },
+  "fps-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: EAPProduction,
+    Schedules:
+{
+  "fps-prod": {
+    "start": false,
+    "stop": false
+  },
+  "fps-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EAPProduction,
+    Schedules:
+{
+  "fps-prod": {
+    "start": false,
+    "stop": false
+  },
+  "fps-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EAPProduction,
+    Schedules:
+{
+  "fps-prod": {
+    "start": false,
+    "stop": false
+  },
+  "fps-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EAP-ecs-start-scheduler
+  },
+  {
+    AccountName: EAPProduction,
+    Schedules:
+{
+  "fps-prod": {
+    "start": false,
+    "stop": false
+  },
+  "fps-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EDASandbox,
+    Schedules:
+{
+  "mstr-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-stop-scheduler
+  },
+  {
+    AccountName: EDASandbox,
+    Schedules:
+{
+  "mstr-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EDASandbox,
+    Schedules:
+{
+  "mstr-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-start-scheduler
+  },
+  {
+    AccountName: EDASandbox,
+    Schedules:
+{
+  "mstr-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EDASandbox,
+    Schedules:
+{
+  "mstr-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EDADevelopment,
+    Schedules:
+{
+  "mstr-dev": {
+    "start": true,
+    "stop": true
+  },
+  "mstr-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EDADevelopment,
+    Schedules:
+{
+  "mstr-dev": {
+    "start": true,
+    "stop": true
+  },
+  "mstr-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-stop-scheduler
+  },
+  {
+    AccountName: EDADevelopment,
+    Schedules:
+{
+  "mstr-dev": {
+    "start": true,
+    "stop": true
+  },
+  "mstr-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EDADevelopment,
+    Schedules:
+{
+  "mstr-dev": {
+    "start": true,
+    "stop": true
+  },
+  "mstr-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-start-scheduler
+  },
+  {
+    AccountName: EDADevelopment,
+    Schedules:
+{
+  "mstr-dev": {
+    "start": true,
+    "stop": true
+  },
+  "mstr-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EDAProduction,
+    Schedules:
+{
+  "mstr-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mstr-stage": {
+    "start": true,
+    "stop": true
+  },
+  "prod": {
+    "start": false,
+    "stop": false
+  },
+  "stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-stop-scheduler
+  },
+  {
+    AccountName: EDAProduction,
+    Schedules:
+{
+  "mstr-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mstr-stage": {
+    "start": true,
+    "stop": true
+  },
+  "prod": {
+    "start": false,
+    "stop": false
+  },
+  "stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-EDA-ecs-start-scheduler
+  },
+  {
+    AccountName: EDAProduction,
+    Schedules:
+{
+  "mstr-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mstr-stage": {
+    "start": true,
+    "stop": true
+  },
+  "prod": {
+    "start": false,
+    "stop": false
+  },
+  "stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EDAProduction,
+    Schedules:
+{
+  "mstr-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mstr-stage": {
+    "start": true,
+    "stop": true
+  },
+  "prod": {
+    "start": false,
+    "stop": false
+  },
+  "stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EDAProduction,
+    Schedules:
+{
+  "mstr-prod": {
+    "start": false,
+    "stop": false
+  },
+  "mstr-stage": {
+    "start": true,
+    "stop": true
+  },
+  "prod": {
+    "start": false,
+    "stop": false
+  },
+  "stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    Schedules:
+{
+  "ent-services-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    Schedules:
+{
+  "ent-services-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    Schedules:
+{
+  "ent-services-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    Schedules:
+{
+  "ent-services-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-start-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesSandbox,
+    Schedules:
+{
+  "ent-services-sandb": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    Schedules:
+{
+  "ent-services-dev": {
+    "start": false,
+    "stop": true
+  },
+  "ent-services-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    Schedules:
+{
+  "ent-services-dev": {
+    "start": false,
+    "stop": true
+  },
+  "ent-services-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    Schedules:
+{
+  "ent-services-dev": {
+    "start": false,
+    "stop": true
+  },
+  "ent-services-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    Schedules:
+{
+  "ent-services-dev": {
+    "start": false,
+    "stop": true
+  },
+  "ent-services-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-start-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesDevelopment,
+    Schedules:
+{
+  "ent-services-dev": {
+    "start": false,
+    "stop": true
+  },
+  "ent-services-test": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    Schedules:
+{
+  "ent-services-partner": {
+    "start": true,
+    "stop": true
+  },
+  "ent-services-prod": {
+    "start": false,
+    "stop": false
+  },
+  "ent-services-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    Schedules:
+{
+  "ent-services-partner": {
+    "start": true,
+    "stop": true
+  },
+  "ent-services-prod": {
+    "start": false,
+    "stop": false
+  },
+  "ent-services-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    Schedules:
+{
+  "ent-services-partner": {
+    "start": true,
+    "stop": true
+  },
+  "ent-services-prod": {
+    "start": false,
+    "stop": false
+  },
+  "ent-services-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    Schedules:
+{
+  "ent-services-partner": {
+    "start": true,
+    "stop": true
+  },
+  "ent-services-prod": {
+    "start": false,
+    "stop": false
+  },
+  "ent-services-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-stop-scheduler
+  },
+  {
+    AccountName: EnterpriseSharedServicesProduction,
+    Schedules:
+{
+  "ent-services-partner": {
+    "start": true,
+    "stop": true
+  },
+  "ent-services-prod": {
+    "start": false,
+    "stop": false
+  },
+  "ent-services-stage": {
+    "start": false,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ENTERPRISE-SERVICES-ecs-start-scheduler
+  },
+  {
+    AccountName: InnovationDevelopment,
+    Schedules:
+{
+  "dev": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: InnovationDevelopment,
+    Schedules:
+{
+  "dev": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-INNOVATION-ecs-start-scheduler
+  },
+  {
+    AccountName: InnovationDevelopment,
+    Schedules:
+{
+  "dev": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: InnovationDevelopment,
+    Schedules:
+{
+  "dev": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-INNOVATION-ecs-stop-scheduler
+  },
+  {
+    AccountName: InnovationDevelopment,
+    Schedules:
+{
+  "dev": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ONAPSandbox,
+    Schedules:
+{
+  "onap-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ONAPSandbox,
+    Schedules:
+{
+  "onap-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: ONAPSandbox,
+    Schedules:
+{
+  "onap-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ONAPSandbox,
+    Schedules:
+{
+  "onap-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-start-scheduler
+  },
+  {
+    AccountName: ONAPSandbox,
+    Schedules:
+{
+  "onap-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ONAPDevelopment,
+    Schedules:
+{
+  "onap-dev": {
+    "start": true,
+    "stop": true
+  },
+  "onap-int": {
+    "start": true,
+    "stop": true
+  },
+  "onap-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: ONAPDevelopment,
+    Schedules:
+{
+  "onap-dev": {
+    "start": true,
+    "stop": true
+  },
+  "onap-int": {
+    "start": true,
+    "stop": true
+  },
+  "onap-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-start-scheduler
+  },
+  {
+    AccountName: ONAPDevelopment,
+    Schedules:
+{
+  "onap-dev": {
+    "start": true,
+    "stop": true
+  },
+  "onap-int": {
+    "start": true,
+    "stop": true
+  },
+  "onap-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ONAPDevelopment,
+    Schedules:
+{
+  "onap-dev": {
+    "start": true,
+    "stop": true
+  },
+  "onap-int": {
+    "start": true,
+    "stop": true
+  },
+  "onap-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ONAPDevelopment,
+    Schedules:
+{
+  "onap-dev": {
+    "start": true,
+    "stop": true
+  },
+  "onap-int": {
+    "start": true,
+    "stop": true
+  },
+  "onap-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ONAPProduction,
+    Schedules:
+{
+  "onap-partner": {
+    "start": true,
+    "stop": true
+  },
+  "onap-prod": {
+    "start": false,
+    "stop": false
+  },
+  "onap-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ONAPProduction,
+    Schedules:
+{
+  "onap-partner": {
+    "start": true,
+    "stop": true
+  },
+  "onap-prod": {
+    "start": false,
+    "stop": false
+  },
+  "onap-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-start-scheduler
+  },
+  {
+    AccountName: ONAPProduction,
+    Schedules:
+{
+  "onap-partner": {
+    "start": true,
+    "stop": true
+  },
+  "onap-prod": {
+    "start": false,
+    "stop": false
+  },
+  "onap-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ONAPProduction,
+    Schedules:
+{
+  "onap-partner": {
+    "start": true,
+    "stop": true
+  },
+  "onap-prod": {
+    "start": false,
+    "stop": false
+  },
+  "onap-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ONAPProduction,
+    Schedules:
+{
+  "onap-partner": {
+    "start": true,
+    "stop": true
+  },
+  "onap-prod": {
+    "start": false,
+    "stop": false
+  },
+  "onap-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ONAP-ecs-stop-scheduler
+  },
+  {
+    AccountName: OPFundSandbox,
+    Schedules:
+{
+  "opfund-sandbox": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: OPFundSandbox,
+    Schedules:
+{
+  "opfund-sandbox": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-stop-scheduler
+  },
+  {
+    AccountName: OPFundSandbox,
+    Schedules:
+{
+  "opfund-sandbox": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-start-scheduler
+  },
+  {
+    AccountName: OPFundSandbox,
+    Schedules:
+{
+  "opfund-sandbox": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: OPFundSandbox,
+    Schedules:
+{
+  "opfund-sandbox": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: OPFundDevelopment,
+    Schedules:
+{
+  "opfund-dev": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: OPFundDevelopment,
+    Schedules:
+{
+  "opfund-dev": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: OPFundDevelopment,
+    Schedules:
+{
+  "opfund-dev": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: OPFundDevelopment,
+    Schedules:
+{
+  "opfund-dev": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-stop-scheduler
+  },
+  {
+    AccountName: OPFundDevelopment,
+    Schedules:
+{
+  "opfund-dev": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-start-scheduler
+  },
+  {
+    AccountName: OPFundProduction,
+    Schedules:
+{
+  "opfund-prod": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-start-scheduler
+  },
+  {
+    AccountName: OPFundProduction,
+    Schedules:
+{
+  "opfund-prod": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: OPFundProduction,
+    Schedules:
+{
+  "opfund-prod": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: OPFundProduction,
+    Schedules:
+{
+  "opfund-prod": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-OPFUND-ecs-stop-scheduler
+  },
+  {
+    AccountName: OPFundProduction,
+    Schedules:
+{
+  "opfund-prod": {
+    "start": false,
+    "stop": false
+  },
+  "opfund-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-start-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-stop-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-start-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-stop-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ServicingSandbox,
+    Schedules:
+{
+  "asm-sandb": {
+    "start": false,
+    "stop": true
+  },
+  "prm-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-stop-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-stop-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-start-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-start-scheduler
+  },
+  {
+    AccountName: ServicingDevelopment,
+    Schedules:
+{
+  "asm-dev": {
+    "start": false,
+    "stop": true
+  },
+  "asm-int": {
+    "start": false,
+    "stop": true
+  },
+  "asm-test": {
+    "start": false,
+    "stop": true
+  },
+  "prm-dev": {
+    "start": true,
+    "stop": true
+  },
+  "prm-int": {
+    "start": true,
+    "stop": true
+  },
+  "prm-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-start-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-stop-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-transfer-stop-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: ServicingProduction,
+    Schedules:
+{
+  "asm-partner": {
+    "start": false,
+    "stop": true
+  },
+  "asm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "asm-stage": {
+    "start": false,
+    "stop": true
+  },
+  "prm-partner": {
+    "start": true,
+    "stop": true
+  },
+  "prm-prod": {
+    "start": false,
+    "stop": false
+  },
+  "prm-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-SERVICING-ecs-start-scheduler
+  },
+  {
+    AccountName: TorchSandbox,
+    Schedules:
+{
+  "dev-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TorchSandbox,
+    Schedules:
+{
+  "dev-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TorchSandbox,
+    Schedules:
+{
+  "dev-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TorchSandbox,
+    Schedules:
+{
+  "dev-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Torch-ecs-start-scheduler
+  },
+  {
+    AccountName: TorchSandbox,
+    Schedules:
+{
+  "dev-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Torch-ecs-stop-scheduler
+  },
+  {
+    AccountName: TorchDevelopment,
+    Schedules:
+{
+  "dev-green": {
+    "start": true,
+    "stop": true
+  },
+  "int-green": {
+    "start": false,
+    "stop": false
+  },
+  "test-green": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TorchDevelopment,
+    Schedules:
+{
+  "dev-green": {
+    "start": true,
+    "stop": true
+  },
+  "int-green": {
+    "start": false,
+    "stop": false
+  },
+  "test-green": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Torch-ecs-stop-scheduler
+  },
+  {
+    AccountName: TorchDevelopment,
+    Schedules:
+{
+  "dev-green": {
+    "start": true,
+    "stop": true
+  },
+  "int-green": {
+    "start": false,
+    "stop": false
+  },
+  "test-green": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TorchDevelopment,
+    Schedules:
+{
+  "dev-green": {
+    "start": true,
+    "stop": true
+  },
+  "int-green": {
+    "start": false,
+    "stop": false
+  },
+  "test-green": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TorchDevelopment,
+    Schedules:
+{
+  "dev-green": {
+    "start": true,
+    "stop": true
+  },
+  "int-green": {
+    "start": false,
+    "stop": false
+  },
+  "test-green": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-Torch-ecs-start-scheduler
+  },
+  {
+    AccountName: TorchProduction,
+    Schedules:
+{
+  "partner-green": {
+    "start": false,
+    "stop": false
+  },
+  "prod-green": {
+    "start": false,
+    "stop": false
+  },
+  "stage-green": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TorchProduction,
+    Schedules:
+{
+  "partner-green": {
+    "start": false,
+    "stop": false
+  },
+  "prod-green": {
+    "start": false,
+    "stop": false
+  },
+  "stage-green": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TorchProduction,
+    Schedules:
+{
+  "partner-green": {
+    "start": false,
+    "stop": false
+  },
+  "prod-green": {
+    "start": false,
+    "stop": false
+  },
+  "stage-green": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-Torch-ecs-start-scheduler
+  },
+  {
+    AccountName: TorchProduction,
+    Schedules:
+{
+  "partner-green": {
+    "start": false,
+    "stop": false
+  },
+  "prod-green": {
+    "start": false,
+    "stop": false
+  },
+  "stage-green": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-Torch-ecs-stop-scheduler
+  },
+  {
+    AccountName: TorchProduction,
+    Schedules:
+{
+  "partner-green": {
+    "start": false,
+    "stop": false
+  },
+  "prod-green": {
+    "start": false,
+    "stop": false
+  },
+  "stage-green": {
+    "start": false,
+    "stop": false
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TRACSSandbox,
+    Schedules:
+{
+  "tracs-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TRACSSandbox,
+    Schedules:
+{
+  "tracs-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-start-scheduler
+  },
+  {
+    AccountName: TRACSSandbox,
+    Schedules:
+{
+  "tracs-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TRACSSandbox,
+    Schedules:
+{
+  "tracs-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TRACSSandbox,
+    Schedules:
+{
+  "tracs-sandb": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-stop-scheduler
+  },
+  {
+    AccountName: TRACSDevelopment,
+    Schedules:
+{
+  "tracs-dev": {
+    "start": true,
+    "stop": true
+  },
+  "tracs-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-start-scheduler
+  },
+  {
+    AccountName: TRACSDevelopment,
+    Schedules:
+{
+  "tracs-dev": {
+    "start": true,
+    "stop": true
+  },
+  "tracs-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-stop-scheduler
+  },
+  {
+    AccountName: TRACSDevelopment,
+    Schedules:
+{
+  "tracs-dev": {
+    "start": true,
+    "stop": true
+  },
+  "tracs-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TRACSDevelopment,
+    Schedules:
+{
+  "tracs-dev": {
+    "start": true,
+    "stop": true
+  },
+  "tracs-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TRACSDevelopment,
+    Schedules:
+{
+  "tracs-dev": {
+    "start": true,
+    "stop": true
+  },
+  "tracs-test": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TRACSProduction,
+    Schedules:
+{
+  "tracs-prod": {
+    "start": false,
+    "stop": false
+  },
+  "tracs-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-stop-scheduler
+  },
+  {
+    AccountName: TRACSProduction,
+    Schedules:
+{
+  "tracs-prod": {
+    "start": false,
+    "stop": false
+  },
+  "tracs-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-stop-scheduler
+  },
+  {
+    AccountName: TRACSProduction,
+    Schedules:
+{
+  "tracs-prod": {
+    "start": false,
+    "stop": false
+  },
+  "tracs-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-ec2-start-scheduler
+  },
+  {
+    AccountName: TRACSProduction,
+    Schedules:
+{
+  "tracs-prod": {
+    "start": false,
+    "stop": false
+  },
+  "tracs-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-rds-scheduler
+  },
+  {
+    AccountName: TRACSProduction,
+    Schedules:
+{
+  "tracs-prod": {
+    "start": false,
+    "stop": false
+  },
+  "tracs-stage": {
+    "start": true,
+    "stop": true
+  }
+},
+    FunctionName: gss-green-TRACS-ecs-start-scheduler
+  }
+]

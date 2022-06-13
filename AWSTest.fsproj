@@ -1,46 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <GenerateProgramFile>false</GenerateProgramFile>
-    <UseAppHost>false</UseAppHost>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateProgramFile>false</GenerateProgramFile>
+        <UseAppHost>false</UseAppHost>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="Common.fs" />
-    <Compile Include="NACLs/*.fs" />
-    <Compile Include="IAMTests.fs" />
-    <Compile Include="Sample.fs" />
-    <Compile Include="AnotherTest.fs" />
-    <Compile Include="Main.fs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Common.fs"/>
+        <Compile Include="NACLs/*.fs"/>
+        <Compile Include="IAMs/*.fs"/>
+        <Compile Include="On-boarding/*.fs"/>
+        <Compile Include="Main.fs"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AWSSDK.CloudWatchEvents" Version="3.7.4.104" />
-    <PackageReference Include="AWSSDK.EC2" Version="3.7.72" />
-    <PackageReference Include="AWSSDK.IdentityManagement" Version="3.7.2.139" />
-    <PackageReference Include="AWSSDK.Lambda" Version="3.7.13" />
-    <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.1.151" />
-    <PackageReference Include="Expecto" Version="9.*" />
-    <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.2.1" />
-    <PackageReference Include="FSharp.Data" Version="4.2.8" />
-    <PackageReference Include="JSON.net" Version="1.0.33" />
-    <PackageReference Include="Verify.Expecto" Version="17.1.4" />
-    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
-    <PackageReference Update="FSharp.Core" Version="6.0.4" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AWSSDK.CloudWatchEvents" Version="3.7.4.104"/>
+        <PackageReference Include="AWSSDK.EC2" Version="3.7.72"/>
+        <PackageReference Include="AWSSDK.IdentityManagement" Version="3.7.2.139"/>
+        <PackageReference Include="AWSSDK.Lambda" Version="3.7.13"/>
+        <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.1.151"/>
+        <PackageReference Include="Expecto" Version="9.*"/>
+        <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.2.1"/>
+        <PackageReference Include="FSharp.Data" Version="4.2.8"/>
+        <PackageReference Include="JSON.net" Version="1.0.33"/>
+        <PackageReference Include="Verify.Expecto" Version="17.1.4"/>
+        <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.*"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*"/>
+        <PackageReference Update="FSharp.Core" Version="6.0.4"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="sample-iam.json" />
-  </ItemGroup>
+    <ItemGroup>
+        <Content Include="sample-iam.json"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="NACLs.SharedServices-hud-nprod-vpc-private-inbound.verified.txt" />
-    <None Remove="NACLs.SharedServices-hud-nprod-vpc-private-outbound.verified.txt" />
-    <None Remove="NACLs.SharedServices-hud-nprod-vpc-public-inbound.verified.txt" />
-    <None Remove="NACLs.SharedServices-hud-nprod-vpc-public-outbound.verified.txt" />
-    <None Remove="NACLs.SharedServices-hud-nprod-vpc.verified.txt" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Remove="NACLs.SharedServices-hud-nprod-vpc-private-inbound.verified.txt"/>
+        <None Remove="NACLs.SharedServices-hud-nprod-vpc-private-outbound.verified.txt"/>
+        <None Remove="NACLs.SharedServices-hud-nprod-vpc-public-inbound.verified.txt"/>
+        <None Remove="NACLs.SharedServices-hud-nprod-vpc-public-outbound.verified.txt"/>
+        <None Remove="NACLs.SharedServices-hud-nprod-vpc.verified.txt"/>
+    </ItemGroup>
 </Project>

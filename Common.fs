@@ -1,21 +1,16 @@
 module AWSTest.Common
 
 open System
-open System.Collections.Concurrent
 open System.Collections.Generic
-open System.Threading.Tasks
 open System.Web
-open Amazon.CloudWatchEvents
 open Amazon.EC2
 open Amazon.EC2.Model
 open Amazon.IdentityManagement
 open Amazon.IdentityManagement.Model
-open Amazon.Lambda
-open Amazon.Lambda.Model
 open Amazon.Runtime
 open Amazon.SecurityToken
 open Amazon.SecurityToken.Model
-open Expecto.Logging
+open Newtonsoft.Json
 
 
 type Account =
@@ -68,61 +63,6 @@ type Account =
     | TRACSDevelopment
     | TRACSProduction
 
-let accountNameMap =
-    dict (
-        seq {
-            "896217152796", "hud-user-directory"
-            "701341283067", "hud-shared-service"
-            "806534605089", "hud-security-aws"
-            "806521661619", "hud-log-archive"
-            "762914581016", "hud-aws-gss"
-            "038220656642", "hud-gss-sandbox"
-            "970275604708", "hud-cares-dev"
-            "970278589057", "hud-cares-prod"
-            "970265723719", "hud-cares-sandbox"
-            "761077331159", "hud-claims-dev"
-            "806712165051", "hud-claims-prod"
-            "168636280008", "hud-claims-sandbox"
-            "119294900279", "hud-dap-dev"
-            "118907171405", "hud-dap-prod"
-            "119280119135", "hud-dap-sandbox"
-            "420916088658", "hud-eap-dev"
-            "420934080059", "hud-eap-prod"
-            "421214324720", "hud-eap-sandbox"
-            "742364056535", "hud-eda-sdlc"
-            "342887341633", "hud-eda-prod"
-            "285250588266", "hud-eda-sandbox"
-            "338771819009", "hud-enterprise-service-dev"
-            "338816603881", "hud-enterprise-service-prod"
-            "338903505373", "hud-enterprise-service-sandbox"
-            "508905935783", "hud-erm-ide-dev"
-            "509235201038", "hud-erm-ide-prod"
-            "508864297691", "hud-erm-ide-sandbox"
-            "478001160533", "hud-fha-dev"
-            "478054296474", "hud-fha-prod"
-            "478065441629", "hud-fha-sandbox"
-            "328723797955", "hud-innovation-dev"
-            "328360499186", "hud-innovation-prod"
-            "110750977480", "hud-onap-nonprod"
-            "110742815133", "hud-onap-prod"
-            "098450116553", "hud-onap-sandbox"
-            "306763355061", "hud-opfund-dev"
-            "306586692354", "hud-opfund-prod"
-            "306539237796", "hud-opfund-sandbox"
-            "089736318025", "hud-poc-sandbox"
-            "138145779389", "hud-servicing-dev"
-            "138194119772", "hud-servicing-prod"
-            "137915624498", "hud-servicing-sandbox"
-            "541262728376", "hud-teamnet-prod"
-            "701524801511", "hud-torch-dev"
-            "701646086524", "hud-torch-prod"
-            "808702758244", "hud-torch-sandbox"
-            "174561355578", "hud-tracs-dev"
-            "174544990874", "hud-tracs-prod"
-            "174627384447", "hud-tracs-sandbox"
-        }
-    )
-
 module Async =
     /// A simplistic Async throttling implementation which batches workflows
     /// into groups, executing each batch in sequence.
@@ -141,7 +81,11 @@ module Async =
     /// pipelining.
     let ParallelThrottle throttle workflows = Async.Parallel(workflows, throttle)
 
-type System.Collections.Generic.IAsyncEnumerable<'T> with
+module JsonConvert =
+    let SerializeObject (formatting: Formatting) obj =
+        JsonConvert.SerializeObject(obj, formatting)
+
+type IAsyncEnumerable<'T> with
     member this.AsTask() =
         task {
             let mutable moreData = true
@@ -186,6 +130,7 @@ let private getResultForImpl (account: Account) (fn: string -> Credentials -> As
 
 let getResultFor (account: Account) (fn: string -> Credentials -> Async<'T>) =
     let fnPartial = getResultForImpl account fn
+
     match account with
     | SharedServices -> fnPartial "701341283067"
     | UserDirectory -> fnPartial "896217152796"
@@ -288,109 +233,14 @@ let getResultForAllAccounts (fn: string -> Credentials -> Async<'T>) =
       TRACSProduction ]
     |> Seq.map (fun x -> getResultFor x fn)
     |> Async.Parallel
-//    accountNameMap
-//    |> Seq.map (fun (KeyValue (accountId, accountName)) ->
-//        async {
-//            let accountInformation =
-//                { AccountName = accountName }
-//
-//            let! credentials = assumeRole (accountId)
-//
-//            let! result = fn accountInformation credentials
-//
-//            return result
-//        //  return {| AccountId = accountId; AccountName = accountName; Result = result |}
-//        })
-//    |> Async.Parallel
-//        |> Seq.collect(fun x -> x.Result |> Seq.map(transform))
 
-let getLambdaSchedulersEnvironmentSettings accountInformation (credentials: Amazon.Runtime.AWSCredentials) =
-    task {
-        let getLambdaConfiguration (client: AmazonLambdaClient) (f: FunctionConfiguration) =
-            task {
-                let request = GetFunctionRequest()
-                request.FunctionName <- f.FunctionName
-                let! response = client.GetFunctionAsync(request)
+let toPrettierJsonString value =
+    let partialFn =
+        JsonConvert.SerializeObject Formatting.Indented
 
-                match response.Configuration.FunctionName with
-                | x when
-                    x.Contains "scheduler"
-                    && not (isNull response.Configuration.Environment)
-                    ->
-                    return
-                        Some
-                            {| AccountName = accountInformation.AccountName
-                               Schedules = response.Configuration.Environment.Variables["SCHEDULES"]
-                               FunctionName = response.Configuration.FunctionName |}
-                | _ -> return None
-            }
-
-        let client =
-            new AmazonLambdaClient(credentials)
-
-        let listFunctionRequest =
-            ListFunctionsRequest()
-
-        listFunctionRequest.MaxItems <- 50
-
-        let! listFunctionResponse =
-            client
-                .Paginators
-                .ListFunctions(listFunctionRequest)
-                .Functions.AsTask()
-
-        let! lambdaConfigurations =
-            listFunctionResponse
-            |> Seq.map (getLambdaConfiguration client)
-            |> Task.WhenAll
-
-        return lambdaConfigurations |> Seq.choose id
-    }
-
-
-let getNACLs account (credentials: Amazon.Runtime.AWSCredentials) =
-    async {
-        let transformOutput (name: Amazon.EC2.Model.Tag option) (item: NetworkAcl) (entry: NetworkAclEntry) =
-            {| AccountName = account
-               Name =
-                (if name.IsSome then
-                     name.Value.Value
-                 else
-                     "")
-               VpcId = item.VpcId
-               IsDefaultNacl = item.IsDefault
-               CidrBlock = entry.CidrBlock
-               Egress = entry.Egress
-               IcmpTypeCode = entry.IcmpTypeCode
-               Ipv6CidrBlock = entry.Ipv6CidrBlock
-               PortRange = entry.PortRange
-               Protocol = entry.Protocol
-               RuleAction = entry.RuleAction.Value
-               RuleNumber = entry.RuleNumber |}
-
-        let ec2 = new AmazonEC2Client(credentials)
-        let request = DescribeNetworkAclsRequest()
-        request.MaxResults <- 50
-
-        let! response =
-            ec2
-                .Paginators
-                .DescribeNetworkAcls(request)
-                .NetworkAcls.AsTask()
-            |> Async.AwaitTask
-
-        return
-            response
-            |> Array.map (fun item ->
-                let naclName =
-                    item.Tags
-                    |> Seq.tryFind (fun tag -> tag.Key = "Name")
-
-                item.Entries
-                |> Seq.map (transformOutput naclName item))
-            |> Seq.collect id
-    }
-
+    value
+    |> JsonConvert.DeserializeObject
+    |> partialFn
 
 type InstanceInfo =
     { InstanceId: string
@@ -431,21 +281,6 @@ let getInstanceInfos credentials =
         return instances
     }
 
-let getCloudWatchEvents accountInformation (credentials: Amazon.Runtime.AWSCredentials) =
-    task {
-        let cloudwatchEventClient =
-            new AmazonCloudWatchEventsClient(credentials)
-
-        let! rules = cloudwatchEventClient.ListRulesAsync()
-
-        return
-            rules.Rules
-            |> Seq.map (fun item ->
-                {| AccountName = accountInformation.AccountName
-                   RuleName = item.Name
-                   ScheduleExpression = item.ScheduleExpression |})
-    }
-
 let getIAMRolePolicy (credentials: Amazon.Runtime.AWSCredentials) =
     task {
         let iamClient =
@@ -460,7 +295,7 @@ let getIAMRolePolicy (credentials: Amazon.Runtime.AWSCredentials) =
         return policy
     }
 
-let getIamPolicy account (credentials: Amazon.Runtime.AWSCredentials) =
+let getIamPolicy account (credentials: AWSCredentials) =
     async {
         let clientConfig =
             AmazonIdentityManagementServiceConfig()
@@ -572,35 +407,4 @@ let getIamPolicy account (credentials: Amazon.Runtime.AWSCredentials) =
         let! out = output |> Async.ParallelThrottle 2
         printfn "=== DONE! %A" System.Threading.Thread.CurrentThread.ManagedThreadId
         return out
-    //        let q = ListAttachedRolePoliciesRequest()
-//        q.RoleName <- "AWS-A43-Admins"
-//        //        q.PolicyArn <-
-////        iamClient.Paginators.ListRolePolicies(new ListRolePoliciesRequest())
-////        iamClient.GetPolicyVersionAsync
-//
-//        let! bb =
-//            iamClient
-//                .Paginators
-//                .ListAttachedRolePolicies(q)
-//                .AttachedPolicies.AsTask()
-//
-//        let! c =
-//            bb
-//            |> Seq.map (fun x ->
-//                task {
-//                    let w = new ListPolicyVersionsRequest()
-//                    w.PolicyArn <- x.PolicyArn
-//                    //                        let! aa = iamClient.Paginators.ListPolicyVersions(w).Versions.AsTask()
-//                    let ww = GetPolicyVersionRequest()
-//                    ww.PolicyArn <- x.PolicyArn
-//                    ww.VersionId <- "v1"
-//                    let! aa = iamClient.GetPolicyVersionAsync(ww)
-//                    printfn "%A" x.PolicyName
-//                    printfn "%A" (HttpUtility.UrlDecode aa.PolicyVersion.Document)
-//                    //                        aa |> Seq.iter(fun x -> printfn "%A" x.Document)
-//                    return aa
-//                })
-//            |> Task.WhenAll
-//
-//        return c
     }
