@@ -1,0 +1,43 @@
+﻿[
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: HUD-PROD-public,
+    PortRange: {
+      From: 22,
+      To: 22
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 100,
+    VpcId: vpc-09f9516e01a86a7d3
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: HUD-PROD-public,
+    PortRange: {
+      From: 1024,
+      To: 65535
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 110,
+    VpcId: vpc-09f9516e01a86a7d3
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: HUD-PROD-public,
+    Protocol: -1,
+    RuleAction: deny,
+    RuleNumber: 32767,
+    VpcId: vpc-09f9516e01a86a7d3
+  }
+]

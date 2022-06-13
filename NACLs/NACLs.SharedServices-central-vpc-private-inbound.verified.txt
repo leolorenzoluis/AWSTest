@@ -1,0 +1,103 @@
+﻿[
+  {
+    AccountName: SharedServices,
+    CidrBlock: 172.16.144.0/27,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 22,
+      To: 22
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 100,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 172.16.144.32/27,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 22,
+      To: 22
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 110,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 172.16.144.64/27,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 22,
+      To: 22
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 120,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 172.0.0.0/8,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 443,
+      To: 443
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 130,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 172.16.145.0/26,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 389,
+      To: 389
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 140,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    PortRange: {
+      From: 1024,
+      To: 65535
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 150,
+    VpcId: vpc-0ba8576a125a5ea20
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: false,
+    IsDefaultNacl: false,
+    Name: gss-infrastructure-vpc-private,
+    Protocol: -1,
+    RuleAction: deny,
+    RuleNumber: 32767,
+    VpcId: vpc-0ba8576a125a5ea20
+  }
+]

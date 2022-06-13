@@ -1,0 +1,73 @@
+﻿[
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: true,
+    IsDefaultNacl: false,
+    Name: HUD-NPROD-private,
+    PortRange: {
+      From: 443,
+      To: 443
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 100,
+    VpcId: vpc-047b76a722d3e08bd
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: true,
+    IsDefaultNacl: false,
+    Name: HUD-NPROD-private,
+    PortRange: {
+      From: 1024,
+      To: 65535
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 110,
+    VpcId: vpc-047b76a722d3e08bd
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: true,
+    IsDefaultNacl: false,
+    Name: HUD-NPROD-private,
+    PortRange: {
+      From: 80,
+      To: 80
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 120,
+    VpcId: vpc-047b76a722d3e08bd
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: true,
+    IsDefaultNacl: false,
+    Name: HUD-NPROD-private,
+    PortRange: {
+      From: 22,
+      To: 22
+    },
+    Protocol: 6,
+    RuleAction: allow,
+    RuleNumber: 130,
+    VpcId: vpc-047b76a722d3e08bd
+  },
+  {
+    AccountName: SharedServices,
+    CidrBlock: 0.0.0.0/0,
+    Egress: true,
+    IsDefaultNacl: false,
+    Name: HUD-NPROD-private,
+    Protocol: -1,
+    RuleAction: deny,
+    RuleNumber: 32767,
+    VpcId: vpc-047b76a722d3e08bd
+  }
+]

@@ -6,7 +6,7 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-
+*.received.*
 # Folder config file
 Desktop.ini
 
