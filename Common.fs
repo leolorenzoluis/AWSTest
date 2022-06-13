@@ -109,20 +109,14 @@ let assumeRole accountId =
 
         let assumeRoleRequest = AssumeRoleRequest()
         assumeRoleRequest.RoleSessionName <- "blah"
-        assumeRoleRequest.RoleArn <- $"arn:aws-us-gov:iam::{accountId}:role/AWS-GSS-Admins"
+        assumeRoleRequest.RoleArn <- $"arn:aws-us-gov:iam::{accountId}:role/gss-green-gitlab-runner-role"
 
         let! assumeRoleResponse =
             assumeRoleRequest
             |> stsClient.AssumeRoleAsync
             |> Async.AwaitTask
-            |> Async.Catch
-        match assumeRoleResponse with
-        | Choice1Of2 assumeRole ->
-            return Some assumeRole.Credentials
-        | Choice2Of2 err ->
-            printfn $"Error in assuming role: %A{err.Message}"
-            return None
-                
+
+        return assumeRoleResponse.Credentials
     }
 
 type AccountInformation = { AccountName: string }
@@ -130,7 +124,7 @@ type AccountInformation = { AccountName: string }
 let private getResultForImpl (account: Account) (fn: string -> Credentials -> Async<'T>) accountId =
     async {
         let! credentials = assumeRole (accountId)
-        let! result = fn (account.ToString()) credentials.Value
+        let! result = fn (account.ToString()) credentials
         return result
     }
 
